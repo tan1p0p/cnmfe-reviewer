@@ -1,7 +1,8 @@
+from keras import layers, models
 import numpy as np
 import os
 from pathlib import Path
-
+import tensorflow as tf
 
 class UnlabeledDataset(object):
     def __init__(
@@ -226,7 +227,7 @@ class Dataset(object):
         
 
     def split_training_test_data(self, test_split: float=0.2,
-                                seed: int=0):
+                                seed: int=0, for_deep: bool=False):
         """
         Splits spatial footprints, traces and targets into
         training, test sets with sizes based on test_split.
@@ -243,13 +244,12 @@ class Dataset(object):
                 set to None. Otherwise, you can simply
                 set a different seed to get a different split.
                 Defaults to 0.
+            for_deep (bool, optional): If set to True,
+                outputs spatial and trace before combined.
         Returns:
             x_train, x_test, y_train, y_test
 
         """
-        data = self.combined
-        targets = self.targets
-
         # train/test split
         # stratifies the split so training and test set have same
         # proportion of positive and negative labels
@@ -258,10 +258,15 @@ class Dataset(object):
         sss = StratifiedShuffleSplit(n_splits=1,
                                     test_size=test_split,
                                     random_state=seed)
-
-        for train_index, test_index in sss.split(data, targets):
-            x_train, x_test = data[train_index], data[test_index]
-            y_train, y_test = targets[train_index], targets[test_index]
+        
+        for train_index, test_index in sss.split(self.combined, self.targets):
+            if for_deep:
+                trace, spatial = np.expand_dims(self.trace, -1), np.expand_dims(self.spatial, -1)
+                x_train = [trace[train_index], spatial[train_index]]
+                x_test = [trace[test_index], spatial[test_index]]
+            else:
+                x_train, x_test = self.combined[train_index], self.combined[test_index]
+            y_train, y_test = self.targets[train_index], self.targets[test_index]
             print("Training and test data loaded")
 
         return x_train, x_test, y_train, y_test
@@ -675,4 +680,43 @@ def retrieve_sp_tr(data,
     tr = data[:, split:]
 
     return spatial, tr
+
+
+def get_model(with_spatial:bool=True, use_cnn_for_trace:bool=True,
+              frame:int=500, crop_size:int=80):
+    # in_out_neurons = 1 # use raw data
+
+    t_input = layers.Input(shape=(frame, 1))
+    if use_cnn_for_trace:
+        t = layers.Conv1D(filters=64, kernel_size=7, padding='same', activation='relu')(t_input)
+        t = layers.MaxPooling1D(pool_size=2)(t)
+    else:
+        t = t_input
+
+    t = layers.LSTM(
+        100,
+        # batch_input_shape=(None, int(frame/2), in_out_neurons),
+        return_sequences=False)(t)
+
+    if with_spatial:
+        s_input = layers.Input(shape=(crop_size, crop_size, 1))
+        s = layers.Conv2D(32, 3, strides=2, padding="same", activation="relu")(s_input)
+        s = layers.MaxPooling2D(2, strides=2, padding="same")(s)
+        s = layers.Dropout(0.5)(s)
+        s = layers.Conv2D(64, 3, strides=2, padding="same", activation="relu")(s)
+        s = layers.MaxPooling2D(2, strides=2, padding="same")(s)
+        s = layers.Flatten()(s)
+        x = layers.Concatenate(axis=1)([t, s])
+    else:
+        x = t
+    x = layers.Dense(256, activation='relu')(x)
+    x = layers.Dropout(0.5)(x)
+    out = layers.Dense(1, activation='sigmoid')(x)
+
+    if with_spatial:
+        model = models.Model(inputs=[t_input, s_input], output=out)
+    else:
+        model = models.Model(inputs=t_input, output=out)
+    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+    return model
 
