@@ -564,7 +564,7 @@ def preprocess_2p_dataset(
 def plot_rois(
     dataset: UnlabeledDataset,
     subset: list
-):
+    ):
     """
     Plot the results of classifier on your
     unlabeled data for examination.
@@ -619,7 +619,7 @@ def plot_rois(
 def classification_analysis(
     y_true: np.ndarray,
     y_pred: np.ndarray
-):
+    ):
     """
     Create four arrays of the indices of false positives,
     false negatives, true positives and true negatives
