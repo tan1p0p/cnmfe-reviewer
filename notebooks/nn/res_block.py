@@ -1,6 +1,8 @@
 import torch.nn as nn
 import torch.nn.functional as F
 
+from nn.san_block import conv1x1
+
 def conv_block(in_ch, out_ch):
     return nn.Sequential(
         nn.Conv2d(in_ch, out_ch, kernel_size=3, padding=1),
@@ -53,43 +55,32 @@ class ResBlock(nn.Module):
 
 
 class ResNet(nn.Module):
-    def __init__(self, sa_type, layers, kernels, num_classes):
+    def __init__(self):
         super().__init__()
-        c = 64
+        c = 32
         self.conv_in, self.bn_in = conv1x1(1, c), nn.BatchNorm2d(c)
         self.conv0, self.bn0 = conv1x1(c, c), nn.BatchNorm2d(c)
-        self.layer0 = self._make_layer(sa_type, Bottleneck, c, layers[0], kernels[0])
+        self.residual0 = ResBlock(c, c)
 
-        c *= 4
-        self.conv1, self.bn1 = conv1x1(c // 4, c), nn.BatchNorm2d(c)
-        self.layer1 = self._make_layer(sa_type, Bottleneck, c, layers[1], kernels[1])
+        c *= 2
+        self.conv1, self.bn1 = conv1x1(c // 2, c), nn.BatchNorm2d(c)
+        self.residual1 = ResBlock(c, c)
 
         c *= 2
         self.conv2, self.bn2 = conv1x1(c // 2, c), nn.BatchNorm2d(c)
-        self.layer2 = self._make_layer(sa_type, Bottleneck, c, layers[2], kernels[2])
+        self.residual2 = ResBlock(c, c)
 
         c *= 2
         self.conv3, self.bn3 = conv1x1(c // 2, c), nn.BatchNorm2d(c)
-        self.layer3 = self._make_layer(sa_type, Bottleneck, c, layers[3], kernels[3])
-
-        c *= 2
-        self.conv4, self.bn4 = conv1x1(c // 2, c), nn.BatchNorm2d(c)
-        self.layer4 = self._make_layer(sa_type, Bottleneck, c, layers[4], kernels[4])
+        self.residual3 = ResBlock(c, c)
 
         self.relu = nn.ReLU(inplace=True)
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
 
-    def _make_layer(self, sa_type, block, planes, blocks, kernel_size=7, stride=1):
-        layers = []
-        for _ in range(0, blocks):
-            layers.append(block(sa_type, planes, planes // 16, planes // 4, planes, 8, kernel_size, stride))
-        return nn.Sequential(*layers)
-
     def forward(self, x):
         x = self.relu(self.bn_in(self.conv_in(x)))
-        x = self.relu(self.bn0(self.layer0(self.conv0(self.pool(x)))))
-        x = self.relu(self.bn1(self.layer1(self.conv1(self.pool(x)))))
-        x = self.relu(self.bn2(self.layer2(self.conv2(self.pool(x)))))
-        x = self.relu(self.bn3(self.layer3(self.conv3(self.pool(x)))))
-        x = self.relu(self.bn4(self.layer4(self.conv4(self.pool(x)))))
+        x = self.relu(self.bn0(self.residual0(self.conv0(self.pool(x)))))
+        x = self.relu(self.bn1(self.residual1(self.conv1(self.pool(x)))))
+        x = self.relu(self.bn2(self.residual2(self.conv2(self.pool(x)))))
+        x = self.relu(self.bn3(self.residual3(self.conv3(self.pool(x)))))
         return x
