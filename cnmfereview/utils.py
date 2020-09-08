@@ -1,8 +1,6 @@
-from keras import layers, models
 import numpy as np
 import os
 from pathlib import Path
-import tensorflow as tf
 
 class UnlabeledDataset(object):
     def __init__(
@@ -680,43 +678,3 @@ def retrieve_sp_tr(data,
     tr = data[:, split:]
 
     return spatial, tr
-
-
-def get_model(with_spatial:bool=True, use_cnn_for_trace:bool=True,
-              frame:int=500, crop_size:int=80):
-    # in_out_neurons = 1 # use raw data
-
-    t_input = layers.Input(shape=(frame, 1))
-    if use_cnn_for_trace:
-        t = layers.Conv1D(filters=64, kernel_size=7, padding='same', activation='relu')(t_input)
-        t = layers.MaxPooling1D(pool_size=2)(t)
-    else:
-        t = t_input
-
-    t = layers.LSTM(
-        100,
-        # batch_input_shape=(None, int(frame/2), in_out_neurons),
-        return_sequences=False)(t)
-
-    if with_spatial:
-        s_input = layers.Input(shape=(crop_size, crop_size, 1))
-        s = layers.Conv2D(32, 3, strides=2, padding="same", activation="relu")(s_input)
-        s = layers.MaxPooling2D(2, strides=2, padding="same")(s)
-        s = layers.Dropout(0.5)(s)
-        s = layers.Conv2D(64, 3, strides=2, padding="same", activation="relu")(s)
-        s = layers.MaxPooling2D(2, strides=2, padding="same")(s)
-        s = layers.Flatten()(s)
-        x = layers.Concatenate(axis=1)([t, s])
-    else:
-        x = t
-    x = layers.Dense(256, activation='relu')(x)
-    x = layers.Dropout(0.5)(x)
-    out = layers.Dense(1, activation='sigmoid')(x)
-
-    if with_spatial:
-        model = models.Model(inputs=[t_input, s_input], output=out)
-    else:
-        model = models.Model(inputs=t_input, output=out)
-    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
-    return model
-
