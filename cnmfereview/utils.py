@@ -259,7 +259,7 @@ class Dataset(object):
         
         for train_index, test_index in sss.split(self.combined, self.targets):
             if for_deep:
-                trace, spatial = np.expand_dims(self.trace, -1), np.expand_dims(self.spatial, -1)
+                trace, spatial = np.expand_dims(self.trace, 1), np.expand_dims(self.spatial, 1)
                 x_train = [trace[train_index], spatial[train_index]]
                 x_test = [trace[test_index], spatial[test_index]]
             else:
