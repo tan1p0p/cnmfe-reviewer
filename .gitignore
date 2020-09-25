@@ -94,5 +94,8 @@ ENV/
 .ropeproject
 
 # Project Specific
-
-
+checkpoints/
+runs/
+data/cr_tutorialA_cropped.npy
+data/cr_tutorialCraw_normalized.npy
+best_models/

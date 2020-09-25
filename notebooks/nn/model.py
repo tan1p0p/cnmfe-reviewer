@@ -26,7 +26,7 @@ class Model(nn.Module):
         if s_stage == 'ResNet':
             self.spatial_stage = ResNet()
         elif s_stage == 'SAN':
-            self.spatial_stage = SAN()
+            self.spatial_stage = SAN(sa_type=0, layers=(3, 4, 6, 8), kernels=[3, 7, 7, 7])
         self.temporal_stage = CNN_LSTM(t_size, hidden_dim=300, output_dim=t_size, use_cnn_for_trace=use_cnn_for_trace)
 
         self.out = nn.Sequential(
@@ -36,7 +36,8 @@ class Model(nn.Module):
             nn.Sigmoid()
         )
 
-    def forward(self, s, t):
-        s = torch.flatten(self.spatial_stage(s), 1)
+    def forward(self, inputs):
+        t, s = inputs
         t = self.temporal_stage(t)
+        s = torch.flatten(self.spatial_stage(s), 1)
         return self.out(torch.cat((s, t), 1))

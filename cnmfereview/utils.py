@@ -1,5 +1,6 @@
 import numpy as np
 import os
+import torch
 from pathlib import Path
 
 class UnlabeledDataset(object):
@@ -260,11 +261,13 @@ class Dataset(object):
         for train_index, test_index in sss.split(self.combined, self.targets):
             if for_deep:
                 trace, spatial = np.expand_dims(self.trace, 1), np.expand_dims(self.spatial, 1)
-                x_train = [trace[train_index], spatial[train_index]]
-                x_test = [trace[test_index], spatial[test_index]]
+                x_train = [torch.FloatTensor(trace[train_index]), torch.FloatTensor(spatial[train_index])]
+                x_test = [torch.FloatTensor(trace[test_index]), torch.FloatTensor(spatial[test_index])]
+                targets = np.expand_dims(self.targets, -1)
+                y_train, y_test = torch.FloatTensor(targets[train_index]), torch.FloatTensor(targets[test_index])
             else:
                 x_train, x_test = self.combined[train_index], self.combined[test_index]
-            y_train, y_test = self.targets[train_index], self.targets[test_index]
+                y_train, y_test = self.targets[train_index], self.targets[test_index]
             print("Training and test data loaded")
 
         return x_train, x_test, y_train, y_test
