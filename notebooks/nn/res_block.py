@@ -55,32 +55,30 @@ class ResBlock(nn.Module):
 
 
 class ResNet(nn.Module):
-    def __init__(self):
+    def __init__(self, block_num):
         super().__init__()
+        relu = nn.ReLU(inplace=True)
+        maxpool = nn.MaxPool2d(kernel_size=2, stride=2)
+
         c = 32
-        self.conv_in, self.bn_in = conv1x1(1, c), nn.BatchNorm2d(c)
-        self.conv0, self.bn0 = conv1x1(c, c), nn.BatchNorm2d(c)
-        self.residual0 = ResBlock(c, c)
+        net = [
+            conv1x1(1, c),
+            nn.BatchNorm2d(c),
+            relu,
+        ]
 
-        c *= 2
-        self.conv1, self.bn1 = conv1x1(c // 2, c), nn.BatchNorm2d(c)
-        self.residual1 = ResBlock(c, c)
+        for i in range(block_num):
+            net.append(maxpool)
+            if i == 0:
+                net.append(conv1x1(c, c))
+            else:
+                net.append(conv1x1(c // 2, c))
+            net.append(ResBlock(c, c))
+            net.append(nn.BatchNorm2d(c))
+            net.append(relu)
+            c *= 2
 
-        c *= 2
-        self.conv2, self.bn2 = conv1x1(c // 2, c), nn.BatchNorm2d(c)
-        self.residual2 = ResBlock(c, c)
-
-        c *= 2
-        self.conv3, self.bn3 = conv1x1(c // 2, c), nn.BatchNorm2d(c)
-        self.residual3 = ResBlock(c, c)
-
-        self.relu = nn.ReLU(inplace=True)
-        self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
+        self.net = nn.Sequential(*net)
 
     def forward(self, x):
-        x = self.relu(self.bn_in(self.conv_in(x)))
-        x = self.relu(self.bn0(self.residual0(self.conv0(self.pool(x)))))
-        x = self.relu(self.bn1(self.residual1(self.conv1(self.pool(x)))))
-        x = self.relu(self.bn2(self.residual2(self.conv2(self.pool(x)))))
-        x = self.relu(self.bn3(self.residual3(self.conv3(self.pool(x)))))
-        return x
+        return self.net(x)

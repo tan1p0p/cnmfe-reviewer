@@ -81,42 +81,40 @@ class Bottleneck(nn.Module):
 class SAN(nn.Module):
     def __init__(self, sa_type, layers, kernels):
         super(SAN, self).__init__()
+        relu = nn.ReLU(inplace=True)
+        maxpool = nn.MaxPool2d(kernel_size=2, stride=2)
+
         c = 32
-        self.conv_in, self.bn_in = conv1x1(1, c), nn.BatchNorm2d(c)
-        self.conv0, self.bn0 = conv1x1(c, c), nn.BatchNorm2d(c)
-        self.layer0 = self._make_layer(sa_type, Bottleneck, c, layers[0], kernels[0])
+        net = [
+            conv1x1(1, c),
+            nn.BatchNorm2d(c),
+            relu,
+        ]
 
-        c *= 2
-        self.conv1, self.bn1 = conv1x1(c // 2, c), nn.BatchNorm2d(c)
-        self.layer1 = self._make_layer(sa_type, Bottleneck, c, layers[1], kernels[1])
+        for i in range(len(layers)):
+            net.append(maxpool)
+            if i == 0:
+                net.append(conv1x1(c, c))
+            else:
+                net.append(conv1x1(c // 2, c))
+            net.append(self._make_layer(sa_type, c, layers[i], kernels[i]))
+            net.append(nn.BatchNorm2d(c))
+            net.append(relu)
+            c *= 2
 
-        c *= 2
-        self.conv2, self.bn2 = conv1x1(c // 2, c), nn.BatchNorm2d(c)
-        self.layer2 = self._make_layer(sa_type, Bottleneck, c, layers[2], kernels[2])
+        self.net = nn.Sequential(*net)
 
-        c *= 2
-        self.conv3, self.bn3 = conv1x1(c // 2, c), nn.BatchNorm2d(c)
-        self.layer3 = self._make_layer(sa_type, Bottleneck, c, layers[3], kernels[3])
-
-        self.relu = nn.ReLU(inplace=True)
-        self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
-
-    def _make_layer(self, sa_type, block, planes, blocks, kernel_size=7, stride=1):
+    def _make_layer(self, sa_type, planes, blocks, kernel_size=7, stride=1):
         layers = []
         for _ in range(0, blocks):
-            layers.append(block(sa_type, planes, planes // 16, planes // 4, planes, 8, kernel_size, stride))
+            layers.append(Bottleneck(sa_type, planes, planes // 16, planes // 4, planes, 8, kernel_size, stride))
         return nn.Sequential(*layers)
 
     def forward(self, x):
-        x = self.relu(self.bn_in(self.conv_in(x)))
-        x = self.relu(self.bn0(self.layer0(self.conv0(self.pool(x)))))
-        x = self.relu(self.bn1(self.layer1(self.conv1(self.pool(x)))))
-        x = self.relu(self.bn2(self.layer2(self.conv2(self.pool(x)))))
-        x = self.relu(self.bn3(self.layer3(self.conv3(self.pool(x)))))
-        return x
+        return self.net(x)
 
 if __name__ == '__main__':
-    net = san(sa_type=0, layers=(3, 4, 6, 8, 3), kernels=[3, 7, 7, 7, 7], num_classes=1000).cuda().eval()
+    net = SAN(sa_type=0, layers=[3, 4, 6, 8], kernels=[3, 7, 7, 7]).cuda()
     print(net)
-    y = net(torch.randn(4, 3, 224, 224).cuda())
+    y = net(torch.randn(1, 1, 80, 80).cuda())
     print(y.size())
