@@ -1,0 +1,1203 @@
+No preprocessing on spatial data
+File ../data/cr_tutorialA_cropped.npy already exists and has been loaded instead.
+No preprocessing on trace data.                   ../data/cr_tutorialCraw_normalized.npy already                   exists and has been loaded instead.
+Successfully loaded data.
+Training and test data loaded
+Number of samples in training set: 11603
+Number of samples in test set: 2901
+
+=== SAN ===
+[I 2020-09-29 13:38:39,087] A new study created in memory with name: no-name-597bd4ce-419e-473b-90a9-d1a6dae4ccd6
+spatial feature len: 6400, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.83 Avg loss: 0.42 Avg F1: 0.88
+validation Results - Epoch: 2  Avg accuracy: 0.83 Avg loss: 0.42 Avg F1: 0.88
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.27 Avg F1: 0.92
+[I 2020-09-29 13:56:39,101] Trial 0 finished with value: 0.9229166666666667 and parameters: {'block_num': 4, 'layer_size_hop': 5, 'kernel_size': 7}. Best is trial 0 with value: 0.9229166666666667.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.80 Avg loss: 0.46 Avg F1: 0.82
+validation Results - Epoch: 1  Avg accuracy: 0.78 Avg loss: 0.47 Avg F1: 0.81
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.90
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 10  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 11  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 11  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 12  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 12  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 13  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 13  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+[I 2020-09-29 14:00:33,124] Trial 1 finished with value: 0.9329284393979403 and parameters: {'block_num': 1, 'layer_size_hop': 2, 'kernel_size': 7}. Best is trial 1 with value: 0.9329284393979403.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.82 Avg loss: 0.41 Avg F1: 0.84
+validation Results - Epoch: 1  Avg accuracy: 0.81 Avg loss: 0.42 Avg F1: 0.83
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.90
+validation Results - Epoch: 2  Avg accuracy: 0.87 Avg loss: 0.31 Avg F1: 0.90
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.90
+[I 2020-09-29 14:02:43,619] Trial 2 finished with value: 0.92214063636965 and parameters: {'block_num': 1, 'layer_size_hop': 2, 'kernel_size': 7}. Best is trial 1 with value: 0.9329284393979403.
+spatial feature len: 2048, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 7  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.90
+[I 2020-09-29 14:14:56,507] Trial 3 finished with value: 0.920405982905983 and parameters: {'block_num': 5, 'layer_size_hop': 2, 'kernel_size': 5}. Best is trial 1 with value: 0.9329284393979403.
+spatial feature len: 2048, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.33 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.33 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 10  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 10  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 11  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 11  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+[I 2020-09-29 14:39:21,103] Trial 4 finished with value: 0.9198001577701814 and parameters: {'block_num': 5, 'layer_size_hop': 3, 'kernel_size': 5}. Best is trial 1 with value: 0.9329284393979403.
+spatial feature len: 25600, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.68 Avg loss: 0.53 Avg F1: 0.66
+validation Results - Epoch: 1  Avg accuracy: 0.68 Avg loss: 0.53 Avg F1: 0.66
+training Results - Epoch: 2  Avg accuracy: 0.78 Avg loss: 0.48 Avg F1: 0.80
+validation Results - Epoch: 2  Avg accuracy: 0.76 Avg loss: 0.47 Avg F1: 0.78
+training Results - Epoch: 3  Avg accuracy: 0.84 Avg loss: 0.32 Avg F1: 0.86
+validation Results - Epoch: 3  Avg accuracy: 0.83 Avg loss: 0.33 Avg F1: 0.85
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.89
+validation Results - Epoch: 5  Avg accuracy: 0.85 Avg loss: 0.31 Avg F1: 0.88
+training Results - Epoch: 6  Avg accuracy: 0.87 Avg loss: 0.28 Avg F1: 0.90
+validation Results - Epoch: 6  Avg accuracy: 0.86 Avg loss: 0.30 Avg F1: 0.88
+[I 2020-09-29 14:42:54,859] Trial 5 finished with value: 0.9209084836339344 and parameters: {'block_num': 2, 'layer_size_hop': 4, 'kernel_size': 3}. Best is trial 1 with value: 0.9329284393979403.
+spatial feature len: 12800, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+[I 2020-09-29 14:47:03,803] Trial 6 finished with value: 0.9138339920948617 and parameters: {'block_num': 3, 'layer_size_hop': 3, 'kernel_size': 7}. Best is trial 1 with value: 0.9329284393979403.
+spatial feature len: 12800, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.36 Avg F1: 0.89
+validation Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.35 Avg F1: 0.89
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 11  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 11  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 12  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 12  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 13  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 13  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 14  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 14  Avg accuracy: 0.90 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 15  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 15  Avg accuracy: 0.90 Avg loss: 0.27 Avg F1: 0.92
+[I 2020-09-29 15:07:35,141] Trial 7 finished with value: 0.922710428798306 and parameters: {'block_num': 3, 'layer_size_hop': 5, 'kernel_size': 7}. Best is trial 1 with value: 0.9329284393979403.
+spatial feature len: 12800, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.34 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.34 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.85 Avg loss: 0.35 Avg F1: 0.90
+validation Results - Epoch: 3  Avg accuracy: 0.86 Avg loss: 0.34 Avg F1: 0.90
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+[I 2020-09-29 15:14:20,103] Trial 8 finished with value: 0.9199167966718669 and parameters: {'block_num': 3, 'layer_size_hop': 5, 'kernel_size': 7}. Best is trial 1 with value: 0.9329284393979403.
+spatial feature len: 6400, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.30 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+[I 2020-09-29 15:25:17,250] Trial 9 finished with value: 0.9176289453425712 and parameters: {'block_num': 4, 'layer_size_hop': 5, 'kernel_size': 7}. Best is trial 1 with value: 0.9329284393979403.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.85 Avg loss: 0.37 Avg F1: 0.88
+validation Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.36 Avg F1: 0.88
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.33 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.33 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.87 Avg loss: 0.28 Avg F1: 0.90
+validation Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 5  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 10  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 11  Avg accuracy: 0.90 Avg loss: 0.22 Avg F1: 0.92
+validation Results - Epoch: 11  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.91
+training Results - Epoch: 12  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 12  Avg accuracy: 0.89 Avg loss: 0.33 Avg F1: 0.91
+training Results - Epoch: 13  Avg accuracy: 0.92 Avg loss: 0.21 Avg F1: 0.94
+validation Results - Epoch: 13  Avg accuracy: 0.89 Avg loss: 0.34 Avg F1: 0.92
+training Results - Epoch: 14  Avg accuracy: 0.92 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 14  Avg accuracy: 0.88 Avg loss: 0.35 Avg F1: 0.91
+training Results - Epoch: 15  Avg accuracy: 0.92 Avg loss: 0.19 Avg F1: 0.94
+validation Results - Epoch: 15  Avg accuracy: 0.89 Avg loss: 0.37 Avg F1: 0.91
+training Results - Epoch: 16  Avg accuracy: 0.93 Avg loss: 0.17 Avg F1: 0.94
+validation Results - Epoch: 16  Avg accuracy: 0.88 Avg loss: 0.34 Avg F1: 0.91
+training Results - Epoch: 17  Avg accuracy: 0.94 Avg loss: 0.15 Avg F1: 0.95
+validation Results - Epoch: 17  Avg accuracy: 0.88 Avg loss: 0.39 Avg F1: 0.91
+training Results - Epoch: 18  Avg accuracy: 0.93 Avg loss: 0.17 Avg F1: 0.95
+validation Results - Epoch: 18  Avg accuracy: 0.88 Avg loss: 0.45 Avg F1: 0.91
+training Results - Epoch: 19  Avg accuracy: 0.94 Avg loss: 0.16 Avg F1: 0.95
+validation Results - Epoch: 19  Avg accuracy: 0.88 Avg loss: 0.39 Avg F1: 0.91
+training Results - Epoch: 20  Avg accuracy: 0.95 Avg loss: 0.15 Avg F1: 0.96
+validation Results - Epoch: 20  Avg accuracy: 0.88 Avg loss: 0.42 Avg F1: 0.91
+training Results - Epoch: 21  Avg accuracy: 0.94 Avg loss: 0.15 Avg F1: 0.96
+validation Results - Epoch: 21  Avg accuracy: 0.88 Avg loss: 0.50 Avg F1: 0.90
+training Results - Epoch: 22  Avg accuracy: 0.95 Avg loss: 0.13 Avg F1: 0.96
+validation Results - Epoch: 22  Avg accuracy: 0.88 Avg loss: 0.56 Avg F1: 0.91
+training Results - Epoch: 23  Avg accuracy: 0.95 Avg loss: 0.14 Avg F1: 0.96
+validation Results - Epoch: 23  Avg accuracy: 0.88 Avg loss: 0.44 Avg F1: 0.91
+training Results - Epoch: 24  Avg accuracy: 0.95 Avg loss: 0.13 Avg F1: 0.96
+validation Results - Epoch: 24  Avg accuracy: 0.88 Avg loss: 0.44 Avg F1: 0.91
+[I 2020-09-29 15:32:31,238] Trial 10 finished with value: 0.9620218948506556 and parameters: {'block_num': 1, 'layer_size_hop': 2, 'kernel_size': 3}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.82 Avg loss: 0.41 Avg F1: 0.85
+validation Results - Epoch: 1  Avg accuracy: 0.82 Avg loss: 0.40 Avg F1: 0.84
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.91
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 8  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 9  Avg accuracy: 0.91 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.31 Avg F1: 0.91
+training Results - Epoch: 10  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 10  Avg accuracy: 0.88 Avg loss: 0.34 Avg F1: 0.91
+training Results - Epoch: 11  Avg accuracy: 0.92 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 11  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.91
+training Results - Epoch: 12  Avg accuracy: 0.92 Avg loss: 0.20 Avg F1: 0.94
+validation Results - Epoch: 12  Avg accuracy: 0.88 Avg loss: 0.33 Avg F1: 0.91
+training Results - Epoch: 13  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.92
+validation Results - Epoch: 13  Avg accuracy: 0.86 Avg loss: 0.32 Avg F1: 0.89
+training Results - Epoch: 14  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 14  Avg accuracy: 0.87 Avg loss: 0.37 Avg F1: 0.90
+[I 2020-09-29 15:36:41,740] Trial 11 finished with value: 0.936409981218138 and parameters: {'block_num': 1, 'layer_size_hop': 2, 'kernel_size': 3}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.41 Avg F1: 0.89
+validation Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.39 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.67 Avg loss: 0.82 Avg F1: 0.66
+validation Results - Epoch: 2  Avg accuracy: 0.66 Avg loss: 0.84 Avg F1: 0.63
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.87 Avg loss: 0.28 Avg F1: 0.90
+validation Results - Epoch: 4  Avg accuracy: 0.87 Avg loss: 0.30 Avg F1: 0.89
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 10  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 10  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.91
+training Results - Epoch: 11  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 11  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 12  Avg accuracy: 0.92 Avg loss: 0.19 Avg F1: 0.94
+validation Results - Epoch: 12  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.91
+training Results - Epoch: 13  Avg accuracy: 0.92 Avg loss: 0.19 Avg F1: 0.94
+validation Results - Epoch: 13  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.91
+training Results - Epoch: 14  Avg accuracy: 0.91 Avg loss: 0.19 Avg F1: 0.94
+validation Results - Epoch: 14  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+[I 2020-09-29 15:40:51,186] Trial 12 finished with value: 0.939755838641189 and parameters: {'block_num': 1, 'layer_size_hop': 3, 'kernel_size': 3}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 25600, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.90
+validation Results - Epoch: 5  Avg accuracy: 0.87 Avg loss: 0.32 Avg F1: 0.89
+[I 2020-09-29 15:43:37,482] Trial 13 finished with value: 0.9175250791085976 and parameters: {'block_num': 2, 'layer_size_hop': 3, 'kernel_size': 3}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 25600, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.25 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+[I 2020-09-29 15:47:44,362] Trial 14 finished with value: 0.9201803235216124 and parameters: {'block_num': 2, 'layer_size_hop': 4, 'kernel_size': 3}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.28 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.93
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 10  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 10  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.92
+training Results - Epoch: 11  Avg accuracy: 0.92 Avg loss: 0.20 Avg F1: 0.93
+validation Results - Epoch: 11  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.92
+training Results - Epoch: 12  Avg accuracy: 0.92 Avg loss: 0.20 Avg F1: 0.94
+validation Results - Epoch: 12  Avg accuracy: 0.89 Avg loss: 0.32 Avg F1: 0.91
+training Results - Epoch: 13  Avg accuracy: 0.92 Avg loss: 0.20 Avg F1: 0.94
+validation Results - Epoch: 13  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.91
+training Results - Epoch: 14  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 14  Avg accuracy: 0.86 Avg loss: 0.36 Avg F1: 0.89
+[I 2020-09-29 15:52:01,746] Trial 15 finished with value: 0.9365684112024597 and parameters: {'block_num': 1, 'layer_size_hop': 3, 'kernel_size': 5}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 25600, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.84 Avg loss: 0.36 Avg F1: 0.86
+validation Results - Epoch: 1  Avg accuracy: 0.83 Avg loss: 0.37 Avg F1: 0.85
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.91
+validation Results - Epoch: 6  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.90
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.90
+validation Results - Epoch: 8  Avg accuracy: 0.87 Avg loss: 0.28 Avg F1: 0.89
+training Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 9  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.90
+[I 2020-09-29 15:57:24,295] Trial 16 finished with value: 0.9226471566345195 and parameters: {'block_num': 2, 'layer_size_hop': 4, 'kernel_size': 3}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.85 Avg loss: 0.41 Avg F1: 0.88
+validation Results - Epoch: 1  Avg accuracy: 0.85 Avg loss: 0.40 Avg F1: 0.89
+training Results - Epoch: 2  Avg accuracy: 0.86 Avg loss: 0.32 Avg F1: 0.90
+validation Results - Epoch: 2  Avg accuracy: 0.86 Avg loss: 0.32 Avg F1: 0.90
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 10  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.91
+[I 2020-09-29 16:00:18,264] Trial 17 finished with value: 0.9228049499116088 and parameters: {'block_num': 1, 'layer_size_hop': 3, 'kernel_size': 3}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 25600, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.82 Avg loss: 0.42 Avg F1: 0.84
+validation Results - Epoch: 1  Avg accuracy: 0.81 Avg loss: 0.41 Avg F1: 0.83
+training Results - Epoch: 2  Avg accuracy: 0.78 Avg loss: 0.44 Avg F1: 0.80
+validation Results - Epoch: 2  Avg accuracy: 0.77 Avg loss: 0.43 Avg F1: 0.78
+training Results - Epoch: 3  Avg accuracy: 0.86 Avg loss: 0.30 Avg F1: 0.88
+validation Results - Epoch: 3  Avg accuracy: 0.84 Avg loss: 0.30 Avg F1: 0.87
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 10  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.91
+[I 2020-09-29 16:05:39,143] Trial 18 finished with value: 0.9201295196977873 and parameters: {'block_num': 2, 'layer_size_hop': 2, 'kernel_size': 5}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.89
+validation Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.29 Avg F1: 0.88
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.32 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.33 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.80 Avg loss: 0.55 Avg F1: 0.82
+validation Results - Epoch: 3  Avg accuracy: 0.78 Avg loss: 0.59 Avg F1: 0.80
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 5  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 6  Avg accuracy: 0.88 Avg loss: 0.32 Avg F1: 0.90
+[I 2020-09-29 16:07:25,149] Trial 19 finished with value: 0.9181959162574308 and parameters: {'block_num': 1, 'layer_size_hop': 3, 'kernel_size': 3}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 25600, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.32 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.90
+training Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.33 Avg F1: 0.90
+validation Results - Epoch: 3  Avg accuracy: 0.87 Avg loss: 0.34 Avg F1: 0.90
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.25 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.90
+validation Results - Epoch: 6  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.89
+training Results - Epoch: 7  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 7  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.89
+[I 2020-09-29 16:11:08,156] Trial 20 finished with value: 0.9184063310137809 and parameters: {'block_num': 2, 'layer_size_hop': 2, 'kernel_size': 5}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.45 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.44 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.82 Avg loss: 0.41 Avg F1: 0.85
+validation Results - Epoch: 2  Avg accuracy: 0.82 Avg loss: 0.40 Avg F1: 0.85
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 9  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 10  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 10  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 11  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 11  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 12  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 12  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 13  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 13  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+training Results - Epoch: 14  Avg accuracy: 0.91 Avg loss: 0.20 Avg F1: 0.93
+validation Results - Epoch: 14  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+training Results - Epoch: 15  Avg accuracy: 0.91 Avg loss: 0.20 Avg F1: 0.93
+validation Results - Epoch: 15  Avg accuracy: 0.89 Avg loss: 0.31 Avg F1: 0.92
+training Results - Epoch: 16  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 16  Avg accuracy: 0.88 Avg loss: 0.35 Avg F1: 0.91
+training Results - Epoch: 17  Avg accuracy: 0.91 Avg loss: 0.20 Avg F1: 0.93
+validation Results - Epoch: 17  Avg accuracy: 0.88 Avg loss: 0.36 Avg F1: 0.90
+[I 2020-09-29 16:16:22,453] Trial 21 finished with value: 0.9344695468357775 and parameters: {'block_num': 1, 'layer_size_hop': 3, 'kernel_size': 5}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.83 Avg loss: 0.43 Avg F1: 0.86
+validation Results - Epoch: 1  Avg accuracy: 0.83 Avg loss: 0.43 Avg F1: 0.85
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.90
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.32 Avg F1: 0.90
+training Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.30 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.32 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.93
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+[I 2020-09-29 16:18:26,993] Trial 22 finished with value: 0.9256133464180569 and parameters: {'block_num': 1, 'layer_size_hop': 4, 'kernel_size': 5}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.85 Avg loss: 0.37 Avg F1: 0.87
+validation Results - Epoch: 1  Avg accuracy: 0.84 Avg loss: 0.36 Avg F1: 0.86
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.90
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.93
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 7  Avg accuracy: 0.91 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 7  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.87 Avg loss: 0.31 Avg F1: 0.89
+training Results - Epoch: 9  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.90
+training Results - Epoch: 10  Avg accuracy: 0.92 Avg loss: 0.19 Avg F1: 0.94
+validation Results - Epoch: 10  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.90
+training Results - Epoch: 11  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 11  Avg accuracy: 0.87 Avg loss: 0.31 Avg F1: 0.90
+training Results - Epoch: 12  Avg accuracy: 0.92 Avg loss: 0.20 Avg F1: 0.93
+validation Results - Epoch: 12  Avg accuracy: 0.88 Avg loss: 0.36 Avg F1: 0.90
+[I 2020-09-29 16:22:08,358] Trial 23 finished with value: 0.9367650023519923 and parameters: {'block_num': 1, 'layer_size_hop': 3, 'kernel_size': 5}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 25600, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.46 Avg loss: 1.13 Avg F1: 0.26
+validation Results - Epoch: 1  Avg accuracy: 0.47 Avg loss: 1.15 Avg F1: 0.27
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.90
+validation Results - Epoch: 2  Avg accuracy: 0.87 Avg loss: 0.30 Avg F1: 0.89
+training Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.32 Avg F1: 0.90
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.32 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 9  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.90
+[I 2020-09-29 16:27:06,708] Trial 24 finished with value: 0.9210420303477911 and parameters: {'block_num': 2, 'layer_size_hop': 3, 'kernel_size': 3}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.35 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.35 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.33 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.32 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.87 Avg loss: 0.37 Avg F1: 0.90
+validation Results - Epoch: 4  Avg accuracy: 0.87 Avg loss: 0.38 Avg F1: 0.89
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 5  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+[I 2020-09-29 16:28:39,153] Trial 25 finished with value: 0.9177248677248677 and parameters: {'block_num': 1, 'layer_size_hop': 4, 'kernel_size': 5}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.50 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.50 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.87 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.88 Avg loss: 0.25 Avg F1: 0.91
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+[I 2020-09-29 16:30:31,813] Trial 26 finished with value: 0.9189224447198487 and parameters: {'block_num': 1, 'layer_size_hop': 2, 'kernel_size': 3}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 25600, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.81 Avg loss: 0.48 Avg F1: 0.83
+validation Results - Epoch: 1  Avg accuracy: 0.79 Avg loss: 0.47 Avg F1: 0.81
+training Results - Epoch: 2  Avg accuracy: 0.87 Avg loss: 0.30 Avg F1: 0.90
+validation Results - Epoch: 2  Avg accuracy: 0.87 Avg loss: 0.30 Avg F1: 0.89
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 10  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+[I 2020-09-29 16:36:07,455] Trial 27 finished with value: 0.9249233579022894 and parameters: {'block_num': 2, 'layer_size_hop': 3, 'kernel_size': 3}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 6400, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.90
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 11  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 11  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+[I 2020-09-29 16:49:42,555] Trial 28 finished with value: 0.9226269609146504 and parameters: {'block_num': 4, 'layer_size_hop': 2, 'kernel_size': 5}. Best is trial 10 with value: 0.9620218948506556.
+spatial feature len: 51200, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.46 Avg F1: 0.89
+validation Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.44 Avg F1: 0.89
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.40 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.40 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.90
+validation Results - Epoch: 3  Avg accuracy: 0.87 Avg loss: 0.31 Avg F1: 0.90
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 10  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 11  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 11  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 12  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 12  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 13  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 13  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 14  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 14  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 15  Avg accuracy: 0.91 Avg loss: 0.20 Avg F1: 0.93
+validation Results - Epoch: 15  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 16  Avg accuracy: 0.91 Avg loss: 0.20 Avg F1: 0.93
+validation Results - Epoch: 16  Avg accuracy: 0.89 Avg loss: 0.31 Avg F1: 0.91
+training Results - Epoch: 17  Avg accuracy: 0.92 Avg loss: 0.19 Avg F1: 0.94
+validation Results - Epoch: 17  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.91
+training Results - Epoch: 18  Avg accuracy: 0.92 Avg loss: 0.19 Avg F1: 0.94
+validation Results - Epoch: 18  Avg accuracy: 0.89 Avg loss: 0.32 Avg F1: 0.91
+training Results - Epoch: 19  Avg accuracy: 0.92 Avg loss: 0.20 Avg F1: 0.94
+validation Results - Epoch: 19  Avg accuracy: 0.88 Avg loss: 0.35 Avg F1: 0.91
+training Results - Epoch: 20  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 20  Avg accuracy: 0.87 Avg loss: 0.39 Avg F1: 0.90
+[I 2020-09-29 16:55:47,543] Trial 29 finished with value: 0.93971140541609 and parameters: {'block_num': 1, 'layer_size_hop': 3, 'kernel_size': 3}. Best is trial 10 with value: 0.9620218948506556.
+
+=== LSTM ===
+[I 2020-09-29 16:55:47,544] A new study created in memory with name: no-name-02b3599d-43dd-40af-af12-99e069b50939
+spatial feature len: 6400, temporal feature len: 150
+training Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.86 Avg loss: 0.35 Avg F1: 0.90
+validation Results - Epoch: 2  Avg accuracy: 0.86 Avg loss: 0.34 Avg F1: 0.90
+training Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.87 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.87 Avg loss: 0.31 Avg F1: 0.90
+validation Results - Epoch: 6  Avg accuracy: 0.87 Avg loss: 0.32 Avg F1: 0.90
+[I 2020-09-29 16:56:47,441] Trial 0 finished with value: 0.9196499602227526 and parameters: {'t_hidden_dim': 150, 't_output_dim': 150}. Best is trial 0 with value: 0.9196499602227526.
+spatial feature len: 6400, temporal feature len: 50
+training Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+[I 2020-09-29 16:58:12,036] Trial 1 finished with value: 0.9233435541927743 and parameters: {'t_hidden_dim': 300, 't_output_dim': 50}. Best is trial 1 with value: 0.9233435541927743.
+spatial feature len: 6400, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+[I 2020-09-29 16:59:14,524] Trial 2 finished with value: 0.9216662300235787 and parameters: {'t_hidden_dim': 300, 't_output_dim': 300}. Best is trial 1 with value: 0.9233435541927743.
+spatial feature len: 6400, temporal feature len: 450
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+[I 2020-09-29 17:00:06,527] Trial 3 finished with value: 0.918525261720528 and parameters: {'t_hidden_dim': 250, 't_output_dim': 450}. Best is trial 1 with value: 0.9233435541927743.
+spatial feature len: 6400, temporal feature len: 150
+training Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.33 Avg F1: 0.88
+validation Results - Epoch: 1  Avg accuracy: 0.84 Avg loss: 0.33 Avg F1: 0.87
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+[I 2020-09-29 17:01:27,329] Trial 4 finished with value: 0.9233463559207867 and parameters: {'t_hidden_dim': 250, 't_output_dim': 150}. Best is trial 4 with value: 0.9233463559207867.
+spatial feature len: 6400, temporal feature len: 500
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.91
+validation Results - Epoch: 6  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.90
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.90
+training Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.91
+validation Results - Epoch: 9  Avg accuracy: 0.87 Avg loss: 0.31 Avg F1: 0.90
+[I 2020-09-29 17:02:58,562] Trial 5 finished with value: 0.9225261735900033 and parameters: {'t_hidden_dim': 150, 't_output_dim': 500}. Best is trial 4 with value: 0.9233463559207867.
+spatial feature len: 6400, temporal feature len: 450
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.88 Avg loss: 0.32 Avg F1: 0.91
+training Results - Epoch: 9  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 10  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 10  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 11  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 11  Avg accuracy: 0.88 Avg loss: 0.34 Avg F1: 0.90
+training Results - Epoch: 12  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 12  Avg accuracy: 0.85 Avg loss: 0.38 Avg F1: 0.88
+[I 2020-09-29 17:04:56,688] Trial 6 finished with value: 0.9292682926829268 and parameters: {'t_hidden_dim': 100, 't_output_dim': 450}. Best is trial 6 with value: 0.9292682926829268.
+spatial feature len: 6400, temporal feature len: 450
+training Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+[I 2020-09-29 17:05:48,949] Trial 7 finished with value: 0.9181961195595177 and parameters: {'t_hidden_dim': 450, 't_output_dim': 450}. Best is trial 6 with value: 0.9292682926829268.
+spatial feature len: 6400, temporal feature len: 200
+training Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+[I 2020-09-29 17:06:22,299] Trial 8 finished with value: 0.9134487350199734 and parameters: {'t_hidden_dim': 350, 't_output_dim': 200}. Best is trial 6 with value: 0.9292682926829268.
+spatial feature len: 6400, temporal feature len: 500
+training Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 10  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 11  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 11  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 12  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 12  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 13  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 13  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+[I 2020-09-29 17:08:38,936] Trial 9 finished with value: 0.9339289285952397 and parameters: {'t_hidden_dim': 350, 't_output_dim': 500}. Best is trial 9 with value: 0.9339289285952397.
+spatial feature len: 6400, temporal feature len: 350
+training Results - Epoch: 1  Avg accuracy: 0.46 Avg loss: 1.35 Avg F1: 0.27
+validation Results - Epoch: 1  Avg accuracy: 0.46 Avg loss: 1.33 Avg F1: 0.27
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.83 Avg loss: 0.51 Avg F1: 0.88
+validation Results - Epoch: 4  Avg accuracy: 0.84 Avg loss: 0.51 Avg F1: 0.89
+training Results - Epoch: 5  Avg accuracy: 0.86 Avg loss: 0.34 Avg F1: 0.90
+validation Results - Epoch: 5  Avg accuracy: 0.86 Avg loss: 0.34 Avg F1: 0.90
+[I 2020-09-29 17:09:30,405] Trial 10 finished with value: 0.9197215777262181 and parameters: {'t_hidden_dim': 500, 't_output_dim': 350}. Best is trial 9 with value: 0.9339289285952397.
+spatial feature len: 6400, temporal feature len: 400
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.90 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.90
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.93
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 9  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 10  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+[I 2020-09-29 17:11:12,448] Trial 11 finished with value: 0.9256922770436283 and parameters: {'t_hidden_dim': 50, 't_output_dim': 400}. Best is trial 9 with value: 0.9339289285952397.
+spatial feature len: 6400, temporal feature len: 500
+training Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 6  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+[I 2020-09-29 17:12:27,703] Trial 12 finished with value: 0.9220546215695395 and parameters: {'t_hidden_dim': 400, 't_output_dim': 500}. Best is trial 9 with value: 0.9339289285952397.
+spatial feature len: 6400, temporal feature len: 500
+training Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.93
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+[I 2020-09-29 17:13:38,294] Trial 13 finished with value: 0.9261482254697286 and parameters: {'t_hidden_dim': 50, 't_output_dim': 500}. Best is trial 9 with value: 0.9339289285952397.
+spatial feature len: 6400, temporal feature len: 400
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.90
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.91
+[I 2020-09-29 17:14:27,951] Trial 14 finished with value: 0.9178317066737008 and parameters: {'t_hidden_dim': 150, 't_output_dim': 400}. Best is trial 9 with value: 0.9339289285952397.
+spatial feature len: 6400, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.31 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.31 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.90
+validation Results - Epoch: 2  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.90
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.90
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 5  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.90
+[I 2020-09-29 17:15:18,552] Trial 15 finished with value: 0.9141259122842915 and parameters: {'t_hidden_dim': 400, 't_output_dim': 300}. Best is trial 9 with value: 0.9339289285952397.
+spatial feature len: 6400, temporal feature len: 400
+training Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.30 Avg F1: 0.89
+validation Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.30 Avg F1: 0.88
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.91
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 6  Avg accuracy: 0.87 Avg loss: 0.30 Avg F1: 0.90
+[I 2020-09-29 17:16:19,387] Trial 16 finished with value: 0.9195248003221692 and parameters: {'t_hidden_dim': 200, 't_output_dim': 400}. Best is trial 9 with value: 0.9339289285952397.
+spatial feature len: 6400, temporal feature len: 450
+training Results - Epoch: 1  Avg accuracy: 0.84 Avg loss: 0.35 Avg F1: 0.86
+validation Results - Epoch: 1  Avg accuracy: 0.83 Avg loss: 0.36 Avg F1: 0.85
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.90
+validation Results - Epoch: 2  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.90
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.91 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 9  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 10  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 10  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 11  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 11  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 12  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 12  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 13  Avg accuracy: 0.92 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 13  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+training Results - Epoch: 14  Avg accuracy: 0.92 Avg loss: 0.20 Avg F1: 0.94
+validation Results - Epoch: 14  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 15  Avg accuracy: 0.91 Avg loss: 0.21 Avg F1: 0.93
+validation Results - Epoch: 15  Avg accuracy: 0.87 Avg loss: 0.32 Avg F1: 0.89
+training Results - Epoch: 16  Avg accuracy: 0.91 Avg loss: 0.20 Avg F1: 0.93
+validation Results - Epoch: 16  Avg accuracy: 0.86 Avg loss: 0.32 Avg F1: 0.89
+[I 2020-09-29 17:18:55,978] Trial 17 finished with value: 0.9358565737051794 and parameters: {'t_hidden_dim': 100, 't_output_dim': 450}. Best is trial 17 with value: 0.9358565737051794.
+spatial feature len: 6400, temporal feature len: 250
+training Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.32 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.31 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.93
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 10  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 11  Avg accuracy: 0.91 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 11  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 12  Avg accuracy: 0.91 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 12  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 13  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 13  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 14  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 14  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 15  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 15  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.92
+training Results - Epoch: 16  Avg accuracy: 0.91 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 16  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.91
+training Results - Epoch: 17  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 17  Avg accuracy: 0.89 Avg loss: 0.32 Avg F1: 0.91
+training Results - Epoch: 18  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 18  Avg accuracy: 0.87 Avg loss: 0.32 Avg F1: 0.90
+training Results - Epoch: 19  Avg accuracy: 0.91 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 19  Avg accuracy: 0.88 Avg loss: 0.34 Avg F1: 0.91
+[I 2020-09-29 17:22:12,948] Trial 18 finished with value: 0.9343915343915344 and parameters: {'t_hidden_dim': 350, 't_output_dim': 250}. Best is trial 17 with value: 0.9358565737051794.
+spatial feature len: 6400, temporal feature len: 250
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.27 Avg F1: 0.92
+validation Results - Epoch: 9  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.90
+[I 2020-09-29 17:23:46,673] Trial 19 finished with value: 0.9245583742860939 and parameters: {'t_hidden_dim': 500, 't_output_dim': 250}. Best is trial 17 with value: 0.9358565737051794.
+spatial feature len: 6400, temporal feature len: 250
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.90
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.90
+training Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.90
+training Results - Epoch: 5  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.91
+validation Results - Epoch: 5  Avg accuracy: 0.87 Avg loss: 0.31 Avg F1: 0.90
+training Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.30 Avg F1: 0.91
+validation Results - Epoch: 6  Avg accuracy: 0.87 Avg loss: 0.32 Avg F1: 0.90
+[I 2020-09-29 17:24:50,501] Trial 20 finished with value: 0.9100851387831383 and parameters: {'t_hidden_dim': 200, 't_output_dim': 250}. Best is trial 17 with value: 0.9358565737051794.
+spatial feature len: 6400, temporal feature len: 350
+training Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.39 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.38 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 7  Avg accuracy: 0.91 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.90
+training Results - Epoch: 9  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+[I 2020-09-29 17:26:27,076] Trial 21 finished with value: 0.9267316161750968 and parameters: {'t_hidden_dim': 350, 't_output_dim': 350}. Best is trial 17 with value: 0.9358565737051794.
+spatial feature len: 6400, temporal feature len: 150
+training Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.30 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+[I 2020-09-29 17:27:40,115] Trial 22 finished with value: 0.9234906548339384 and parameters: {'t_hidden_dim': 350, 't_output_dim': 150}. Best is trial 17 with value: 0.9358565737051794.
+spatial feature len: 6400, temporal feature len: 350
+training Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.33 Avg F1: 0.88
+validation Results - Epoch: 1  Avg accuracy: 0.85 Avg loss: 0.34 Avg F1: 0.87
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.87 Avg loss: 0.31 Avg F1: 0.89
+validation Results - Epoch: 3  Avg accuracy: 0.86 Avg loss: 0.32 Avg F1: 0.89
+training Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.90
+validation Results - Epoch: 4  Avg accuracy: 0.86 Avg loss: 0.30 Avg F1: 0.89
+[I 2020-09-29 17:28:21,958] Trial 23 finished with value: 0.9186372223307928 and parameters: {'t_hidden_dim': 400, 't_output_dim': 350}. Best is trial 17 with value: 0.9358565737051794.
+spatial feature len: 6400, temporal feature len: 50
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.92
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.90
+training Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.90
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+[I 2020-09-29 17:29:44,289] Trial 24 finished with value: 0.9260823653643083 and parameters: {'t_hidden_dim': 450, 't_output_dim': 50}. Best is trial 17 with value: 0.9358565737051794.
+spatial feature len: 6400, temporal feature len: 250
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 5  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.90
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+[I 2020-09-29 17:31:07,155] Trial 25 finished with value: 0.9239812429826301 and parameters: {'t_hidden_dim': 300, 't_output_dim': 250}. Best is trial 17 with value: 0.9358565737051794.
+spatial feature len: 6400, temporal feature len: 200
+training Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 3  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.31 Avg F1: 0.90
+validation Results - Epoch: 4  Avg accuracy: 0.87 Avg loss: 0.32 Avg F1: 0.89
+[I 2020-09-29 17:31:46,828] Trial 26 finished with value: 0.9157273215244229 and parameters: {'t_hidden_dim': 350, 't_output_dim': 200}. Best is trial 17 with value: 0.9358565737051794.
+spatial feature len: 6400, temporal feature len: 200
+training Results - Epoch: 1  Avg accuracy: 0.86 Avg loss: 0.32 Avg F1: 0.88
+validation Results - Epoch: 1  Avg accuracy: 0.85 Avg loss: 0.33 Avg F1: 0.87
+training Results - Epoch: 2  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.90
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 6  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 7  Avg accuracy: 0.91 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 8  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 9  Avg accuracy: 0.91 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 10  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.92
+validation Results - Epoch: 10  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+[I 2020-09-29 17:33:33,425] Trial 27 finished with value: 0.9271612425038743 and parameters: {'t_hidden_dim': 450, 't_output_dim': 200}. Best is trial 17 with value: 0.9358565737051794.
+spatial feature len: 6400, temporal feature len: 450
+training Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.28 Avg F1: 0.91
+validation Results - Epoch: 1  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.90 Avg loss: 0.24 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 4  Avg accuracy: 0.90 Avg loss: 0.25 Avg F1: 0.92
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 5  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 6  Avg accuracy: 0.91 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 6  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+training Results - Epoch: 7  Avg accuracy: 0.90 Avg loss: 0.23 Avg F1: 0.93
+validation Results - Epoch: 7  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 8  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 8  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 9  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 9  Avg accuracy: 0.88 Avg loss: 0.27 Avg F1: 0.91
+training Results - Epoch: 10  Avg accuracy: 0.91 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 10  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 11  Avg accuracy: 0.90 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 11  Avg accuracy: 0.88 Avg loss: 0.28 Avg F1: 0.91
+training Results - Epoch: 12  Avg accuracy: 0.90 Avg loss: 0.22 Avg F1: 0.93
+validation Results - Epoch: 12  Avg accuracy: 0.88 Avg loss: 0.29 Avg F1: 0.91
+[I 2020-09-29 17:35:37,587] Trial 28 finished with value: 0.9321709266230763 and parameters: {'t_hidden_dim': 250, 't_output_dim': 450}. Best is trial 17 with value: 0.9358565737051794.
+spatial feature len: 6400, temporal feature len: 300
+training Results - Epoch: 1  Avg accuracy: 0.88 Avg loss: 0.30 Avg F1: 0.90
+validation Results - Epoch: 1  Avg accuracy: 0.87 Avg loss: 0.29 Avg F1: 0.90
+training Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 2  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+training Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.26 Avg F1: 0.92
+validation Results - Epoch: 3  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 4  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 4  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+training Results - Epoch: 5  Avg accuracy: 0.88 Avg loss: 0.26 Avg F1: 0.91
+validation Results - Epoch: 5  Avg accuracy: 0.89 Avg loss: 0.27 Avg F1: 0.92
+[I 2020-09-29 17:36:28,262] Trial 29 finished with value: 0.917507111455909 and parameters: {'t_hidden_dim': 200, 't_output_dim': 300}. Best is trial 17 with value: 0.9358565737051794.

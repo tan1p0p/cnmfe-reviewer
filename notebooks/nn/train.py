@@ -56,8 +56,8 @@ def train(model, train_loader, test_loader, device):
         avg_nll = metrics['cross_entropy']
         avg_f1 = metrics['f1']
         print(f"{mode} Results - Epoch: {epoch}  "
-              f"Avg accuracy: {avg_accuracy:.2f} Avg loss: {avg_nll:.2f} "
-              f"Avg F1: {avg_f1:.2f}")
+              f"Avg accuracy: {avg_accuracy:.3f} Avg loss: {avg_nll:.3f} "
+              f"Avg F1: {avg_f1:.3f}")
         writer.add_scalar(f"{mode}/avg_loss", avg_nll, epoch)
         writer.add_scalar(f"{mode}/avg_accuracy", avg_accuracy, epoch)
 

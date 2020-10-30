@@ -66,7 +66,6 @@ def search_lstm_params(train_loader, test_loader):
     study.optimize(optimaze_lstm, n_trials=30)
 
 def main():
-
     data = cr.Dataset(
         data_paths=cfg.data_paths,
         exp_id=cfg.exp_id,
