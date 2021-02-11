@@ -84,4 +84,4 @@ def train(model, train_loader, test_loader, device):
     evaluator.add_event_handler(Events.COMPLETED, handler)
 
     trainer.run(train_loader, max_epochs=epochs)
-    return handler.best_score
+    return handler.best_score, model
