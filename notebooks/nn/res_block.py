@@ -1,7 +1,9 @@
 import torch.nn as nn
 import torch.nn.functional as F
 
-from nn.san_block import conv1x1
+
+def conv1x1(in_planes, out_planes, stride=1):
+    return nn.Conv2d(in_planes, out_planes, kernel_size=1, stride=stride, bias=False)
 
 def conv_block(in_ch, out_ch):
     return nn.Sequential(
@@ -87,10 +89,9 @@ class ResNet(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-class CNN(nn.Module):
+class CNN0(nn.Module):
     def __init__(self, block_num):
         super().__init__()
-        self.model_name = 'ResNet'
         relu = nn.ReLU(inplace=True)
         maxpool = nn.MaxPool2d(kernel_size=2, stride=2)
 
@@ -116,3 +117,19 @@ class CNN(nn.Module):
 
     def forward(self, x):
         return self.net(x)
+
+class CNN(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.conv1 = nn.Conv2d(3, 128, kernel_size=3, padding=1)
+        self.bn1 = nn.BatchNorm2d(128)
+        self.conv2 = nn.Conv2d(128, 256, kernel_size=3, padding=1)
+        self.bn2 = nn.BatchNorm2d(256)
+        self.conv3 = nn.Conv2d(256, 512, kernel_size=3, padding=1)
+        self.bn3 = nn.BatchNorm2d(512)
+
+    def forward(self, x):
+        x = F.relu(self.bn1(self.conv1(x)))
+        x = F.relu(self.bn2(self.conv2(x)))
+        x = F.relu(self.bn3(self.conv3(x)))
+        return x

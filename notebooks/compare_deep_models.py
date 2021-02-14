@@ -44,6 +44,12 @@ MODEL_LIST = [
     'googlenet',
 ]
 MODE = 'fps'
+if MODE == 'fps':
+    DEVICE = 'cpu'
+    PRETRAINED = False
+else:
+    DEVICE = 'cuda:0'
+    PRETRAINED = True
 
 def fix_seed(seed):
     random.seed(seed)
@@ -67,37 +73,36 @@ def main():
     x_train, x_test, y_train, y_test = data.split_training_test_data(
         test_split=.20, seed=10, for_deep=True)
 
-    device = 'cuda:0'
-    trainsets = NNDataset(x_train, y_train, device)
-    testsets = NNDataset(x_test, y_test, device)
+    trainsets = NNDataset(x_train, y_train, DEVICE)
+    testsets = NNDataset(x_test, y_test, DEVICE)
     train_loader = torch.utils.data.DataLoader(trainsets, batch_size=32)
     test_loader = torch.utils.data.DataLoader(testsets, batch_size=32)
 
     for model_name in MODEL_LIST:
         print(f'\n======== {model_name} ========\n')
         if model_name == 'LSTM':
-            model = Model(t_stage='LSTM', t_hidden_dim=500, t_output_dim=500, use_cnn_for_trace=False)
+            model = Model(t_stage='LSTM', device=DEVICE, t_hidden_dim=500, t_output_dim=500, use_cnn_for_trace=False)
         elif model_name == 'CNN_LSTM':
-            model = Model(t_stage='LSTM', t_hidden_dim=500, t_output_dim=500)
+            model = Model(t_stage='LSTM', device=DEVICE, t_hidden_dim=500, t_output_dim=500)
         elif model_name == 'OnlyCNN':
-            model = Model(s_stage='CNN', block_num=5)
+            model = Model(s_stage='CNN', device=DEVICE, block_num=5)
         else:
             model = Model(
-                s_stage=model_name, t_stage='LSTM',
+                s_stage=model_name, t_stage='LSTM', device=DEVICE, pretrained=PRETRAINED,
                 block_num=5, t_hidden_dim=500, t_output_dim=500
             )
         if MODE == 'train':
-            score, model = train(model, model_name, train_loader, test_loader, device, log_path=f'{ROOT}/out/{model_name}.txt')
+            score, model = train(model, model_name, train_loader, test_loader, DEVICE, log_path=f'{ROOT}/out/{model_name}.txt')
             model = model.to('cpu')
             torch.save(model.state_dict(), f'{ROOT}/best_models/{model_name}.pth')
         elif MODE == 'fps':
             model.eval()
-            inputs = (torch.rand(1, 500).cuda(), torch.rand(1, 1, 80, 80).cuda())
+            inputs = (torch.rand(1, 1, 500).to(DEVICE), torch.rand(1, 1, 80, 80).to(DEVICE))
             t0 = time.time()
             for i in range(100):
                 model(inputs)
             with open(f'{ROOT}/out/speed.txt', 'a') as f:
-                f.write(f'{model_name}: {(time.time - t0) / 100} fps')
+                f.write(f'{model_name}: {100 / (time.time() - t0):.04f} fps\n')
         else:
             raise ValueError
 

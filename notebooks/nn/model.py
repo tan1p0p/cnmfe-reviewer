@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 
-from nn.san_block import SAN
+# from nn.san_block import SAN
 from nn.res_block import ResNet, CNN
 from nn.extractor import Extractor
 
@@ -23,7 +23,7 @@ class CNN_LSTM(nn.Module):
 
 class Model(nn.Module):
     def __init__(self,
-                 s_stage=None, t_stage=None,
+                 s_stage=None, t_stage=None, device='cuda:0', pretrained=True,
                  s_size=(80, 80), block_num=None, san_layers=None, san_kernels=None,
                  t_size=500, t_hidden_dim=300, t_output_dim=300, use_cnn_for_trace=True):
         super().__init__()
@@ -35,18 +35,18 @@ class Model(nn.Module):
             if s_stage == 'ResNet':
                 if block_num is None:
                     raise ValueError('ResNet needs block_num')
-                self.spatial_stage = ResNet(block_num=block_num).cuda()
+                self.spatial_stage = ResNet(block_num=block_num).to(device)
             elif s_stage == 'CNN':
                 if block_num is None:
                     raise ValueError('CNN needs block_num')
-                self.spatial_stage = CNN(block_num=block_num).cuda()
-            elif s_stage == 'SAN':
-                if san_layers is None or san_kernels is None:
-                    raise ValueError('SAN needs san_layers and san_kernels')
-                self.spatial_stage = SAN(sa_type=0, layers=san_layers, kernels=san_kernels).cuda()
+                self.spatial_stage = CNN(block_num=block_num).to(device)
+            # elif s_stage == 'SAN':
+            #     if san_layers is None or san_kernels is None:
+            #         raise ValueError('SAN needs san_layers and san_kernels')
+            #     self.spatial_stage = SAN(sa_type=0, layers=san_layers, kernels=san_kernels).to(device)
             else:
-                self.spatial_stage = Extractor(s_stage, pretrained=True).cuda()
-            s_in = torch.rand((1, 1) + s_size).cuda()
+                self.spatial_stage = Extractor(s_stage, pretrained=pretrained).to(device)
+            s_in = torch.rand((1, 1) + s_size).to(device)
             s_out_len = torch.flatten(self.spatial_stage(s_in), 1).shape[1]
 
         if t_stage is None:
