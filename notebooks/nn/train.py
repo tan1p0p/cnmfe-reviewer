@@ -20,11 +20,12 @@ class NNDataset(torch.utils.data.Dataset):
         data = (self.x[0][i].to(self.device), self.x[1][i].to(self.device))
         return data, self.y[i].to(self.device)
 
-def train(model, train_loader, test_loader, device):
+
+def train(model, model_prefix, train_loader, test_loader, device, log_path=None):
     model.to(device)
     optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
     criterion = F.binary_cross_entropy
-    epochs = 30
+    epochs = 50
 
     def preprocess(y):
         return torch.round(y[0]), y[1]
@@ -36,35 +37,51 @@ def train(model, train_loader, test_loader, device):
     trainer = create_supervised_trainer(model, optimizer, criterion, device=device)
     evaluator = create_supervised_evaluator(
         model,
-        metrics={'accuracy': ignite.metrics.Accuracy(preprocess),
-                 'f1': F1,
-                 'cross_entropy': ignite.metrics.Loss(criterion)},
+        metrics={
+            'accuracy': ignite.metrics.Accuracy(preprocess),
+            'loss': ignite.metrics.Loss(criterion),
+            'precision': precision, 'recall': recall, 'f1': F1,
+        },
+        device=device)
+    tester = create_supervised_evaluator(
+        model,
+        metrics={
+            'accuracy': ignite.metrics.Accuracy(preprocess),
+            'loss': ignite.metrics.Loss(criterion),
+            'precision': precision, 'recall': recall, 'f1': F1,
+        },
         device=device)
     writer = SummaryWriter()
 
     @trainer.on(Events.ITERATION_COMPLETED)
     def log_training_loss(engine):
         i = (engine.state.iteration - 1) % len(train_loader) + 1
-        if i % 500 == 0:
-            print(f"Epoch[{engine.state.epoch}] Iteration[{i}/{len(train_loader)}] "
-                  f"Loss: {engine.state.output:.2f}")
+        if i % 50 == 0:
+            print(f"\rEpoch[{engine.state.epoch}] Iteration[{i}/{len(train_loader)}] "
+                  f"Loss: {engine.state.output:.2f}", end="")
             writer.add_scalar("training/loss", engine.state.output, engine.state.iteration)
 
     def write_metrics(metrics, writer, mode: str, epoch: int):
         """print metrics & write metrics to log"""
         avg_accuracy = metrics['accuracy']
-        avg_nll = metrics['cross_entropy']
-        avg_f1 = metrics['f1']
-        print(f"{mode} Results - Epoch: {epoch}  "
-              f"Avg accuracy: {avg_accuracy:.3f} Avg loss: {avg_nll:.3f} "
-              f"Avg F1: {avg_f1:.3f}")
-        writer.add_scalar(f"{mode}/avg_loss", avg_nll, epoch)
+        avg_loss = metrics['loss']
+        log_text = f"{mode} Results - Epoch: {epoch}  " + \
+                f"loss: {avg_loss:.4f} " + \
+                f"accuracy: {avg_accuracy:.4f} " + \
+                f"F1(P, R): {metrics['f1']:.4f} " + \
+                f"({metrics['precision']:.4f}, {metrics['recall']:.4f})"
+        if log_path is None:
+            print(log_text)
+        else:
+            with open(log_path, 'a') as f:
+                f.write(log_text + '\n')
+        writer.add_scalar(f"{mode}/avg_loss", avg_loss, epoch)
         writer.add_scalar(f"{mode}/avg_accuracy", avg_accuracy, epoch)
 
     @trainer.on(Events.EPOCH_COMPLETED)
     def log_training_results(engine):
-        evaluator.run(train_loader)
-        metrics = evaluator.state.metrics
+        tester.run(train_loader)
+        metrics = tester.state.metrics
         write_metrics(metrics, writer, 'training', engine.state.epoch)
 
     @trainer.on(Events.EPOCH_COMPLETED)
@@ -73,14 +90,15 @@ def train(model, train_loader, test_loader, device):
         metrics = evaluator.state.metrics
         write_metrics(metrics, writer, 'validation', engine.state.epoch)
 
-    handler = ModelCheckpoint(dirname='./checkpoints', filename_prefix='sample',
-                              n_saved=5, create_dir=True, require_empty=False)
+    handler = ModelCheckpoint(dirname='./checkpoints', filename_prefix=model_prefix,
+                              n_saved=10, create_dir=True, require_empty=False)
     trainer.add_event_handler(Events.EPOCH_COMPLETED, handler, {'mymodel': model})
 
-    handler = EarlyStopping(
-        patience=5,
-        score_function=lambda x: x.state.metrics['f1'],
-        trainer=trainer)
+    def score_function(engine):
+        val_loss = engine.state.metrics['loss']
+        return -val_loss
+
+    handler = EarlyStopping(patience=10, score_function=score_function, trainer=trainer)
     evaluator.add_event_handler(Events.COMPLETED, handler)
 
     trainer.run(train_loader, max_epochs=epochs)

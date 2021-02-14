@@ -25,7 +25,7 @@ def deconv_block(in_ch, out_ch):
     )
 
 class ResBlock(nn.Module):
-    def __init__(self, channel_in, channel_out):
+    def __init__(self, channel_in, channel_out, with_shortcut=True):
         super().__init__()
         channel = channel_out // 4
 
@@ -36,13 +36,17 @@ class ResBlock(nn.Module):
         self.conv3 = nn.Conv2d(channel, channel_out, kernel_size=1)
         self.bn3 = nn.BatchNorm2d(channel_out)
 
+        self.with_shortcut = with_shortcut
         self.shortcut = self._shortcut(channel_in, channel_out)
 
     def forward(self, inputs):
         x = F.relu(self.bn1(self.conv1(inputs)))
         x = F.relu(self.bn2(self.conv2(x)))
         x = F.relu(self.bn3(self.conv3(x)))
-        return F.relu(x + self.shortcut(x)) # skip connection
+        if self.with_shortcut:
+            return F.relu(x + self.shortcut(inputs)) # skip connection
+        else:
+            return x
 
     def _shortcut(self, channel_in, channel_out):
         if channel_in != channel_out:
@@ -53,10 +57,10 @@ class ResBlock(nn.Module):
     def _projection(self, channel_in, channel_out):
         return nn.Conv2d(channel_in, channel_out, kernel_size=1)
 
-
 class ResNet(nn.Module):
     def __init__(self, block_num):
         super().__init__()
+        self.model_name = 'ResNet'
         relu = nn.ReLU(inplace=True)
         maxpool = nn.MaxPool2d(kernel_size=2, stride=2)
 
@@ -74,6 +78,36 @@ class ResNet(nn.Module):
             else:
                 net.append(conv1x1(c // 2, c))
             net.append(ResBlock(c, c))
+            net.append(nn.BatchNorm2d(c))
+            net.append(relu)
+            c *= 2
+
+        self.net = nn.Sequential(*net)
+
+    def forward(self, x):
+        return self.net(x)
+
+class CNN(nn.Module):
+    def __init__(self, block_num):
+        super().__init__()
+        self.model_name = 'ResNet'
+        relu = nn.ReLU(inplace=True)
+        maxpool = nn.MaxPool2d(kernel_size=2, stride=2)
+
+        c = 32
+        net = [
+            conv1x1(1, c),
+            nn.BatchNorm2d(c),
+            relu,
+        ]
+
+        for i in range(block_num):
+            net.append(maxpool)
+            if i == 0:
+                net.append(conv1x1(c, c))
+            else:
+                net.append(conv1x1(c // 2, c))
+            net.append(ResBlock(c, c, with_shortcut=False))
             net.append(nn.BatchNorm2d(c))
             net.append(relu)
             c *= 2
