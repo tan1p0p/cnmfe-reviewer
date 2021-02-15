@@ -89,7 +89,7 @@ class ResNet(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-class CNN0(nn.Module):
+class CNN(nn.Module):
     def __init__(self, block_num):
         super().__init__()
         relu = nn.ReLU(inplace=True)
@@ -118,18 +118,37 @@ class CNN0(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-class CNN(nn.Module):
-    def __init__(self):
+class CNN0(nn.Module):
+    def __init__(self, block_num):
         super().__init__()
-        self.conv1 = nn.Conv2d(3, 128, kernel_size=3, padding=1)
-        self.bn1 = nn.BatchNorm2d(128)
-        self.conv2 = nn.Conv2d(128, 256, kernel_size=3, padding=1)
-        self.bn2 = nn.BatchNorm2d(256)
-        self.conv3 = nn.Conv2d(256, 512, kernel_size=3, padding=1)
-        self.bn3 = nn.BatchNorm2d(512)
+        self.maxpool = nn.MaxPool2d(kernel_size=2)
+        self.dropout = nn.Dropout2d(0.3)
+    
+        self.conv1_1 = nn.Conv2d(1, 32, kernel_size=3, padding=1)
+        self.conv1_2 = nn.Conv2d(32, 32, kernel_size=3, padding=1)
+
+        self.conv2_1 = nn.Conv2d(32, 64, kernel_size=3, padding=1)
+        self.conv2_2 = nn.Conv2d(64, 64, kernel_size=3, padding=1)
+
+        self.conv3_1 = nn.Conv2d(64, 128, kernel_size=3, padding=1)
+        self.conv3_2 = nn.Conv2d(128, 128, kernel_size=3, padding=1)
+
+        self.conv4_1 = nn.Conv2d(128, 256, kernel_size=3, padding=1)
+        self.conv4_2 = nn.Conv2d(256, 256, kernel_size=3, padding=1)
 
     def forward(self, x):
-        x = F.relu(self.bn1(self.conv1(x)))
-        x = F.relu(self.bn2(self.conv2(x)))
-        x = F.relu(self.bn3(self.conv3(x)))
+        x = F.relu(self.dropout(self.conv1_1(x)))
+        x = F.relu(self.dropout(self.conv1_2(x)))
+        x = self.maxpool(x)
+
+        x = F.relu(self.dropout(self.conv2_1(x)))
+        x = F.relu(self.dropout(self.conv2_2(x)))
+        x = self.maxpool(x)
+
+        x = F.relu(self.dropout(self.conv3_1(x)))
+        x = F.relu(self.dropout(self.conv3_2(x)))
+        x = self.maxpool(x)
+
+        x = F.relu(self.dropout(self.conv4_1(x)))
+        x = F.relu(self.dropout(self.conv4_2(x)))
         return x

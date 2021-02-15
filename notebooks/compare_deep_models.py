@@ -30,20 +30,22 @@ args = parser.parse_args()
 
 ROOT = Path('../')
 MODEL_LIST = [
-    'OnlyCNN', 'LSTM', 'CNN_LSTM', # Only Spatial/Temporal
-    'CNN', 'ResNet',               # Simple DNN
-    'alexnet',
-    'vgg11', 'vgg13', 'vgg16', 'vgg19',
-    'squeezenet1_1',
-    'densenet121', 'densenet161', 'densenet169', 'densenet201',
-    'mobilenet_v2',
-    'resnet18', 'resnet34', 'resnet50', 'resnet101', 'resnet152',
-    'resnext50_32x4d', 'resnext101_32x8d',
-    'wide_resnet50_2', 'wide_resnet101_2',
-    'shufflenet_v2_x1_0',
-    'googlenet',
+    'OnlyCNN',
+    # 'LSTM', 'CNN_LSTM', # Only Spatial/Temporal
+    'CNN',
+    # 'CNN', 'ResNet',               # Simple DNN
+    # 'alexnet',
+    # 'vgg11', 'vgg13', 'vgg16', 'vgg19',
+    # 'squeezenet1_1',
+    # 'densenet121', 'densenet161', 'densenet169', 'densenet201',
+    # 'mobilenet_v2',
+    # 'resnet18', 'resnet34', 'resnet50', 'resnet101', 'resnet152',
+    # 'resnext50_32x4d', 'resnext101_32x8d',
+    # 'wide_resnet50_2', 'wide_resnet101_2',
+    # 'shufflenet_v2_x1_0',
+    # 'googlenet',
 ]
-MODE = 'fps'
+MODE = 'train'
 if MODE == 'fps':
     DEVICE = 'cpu'
     PRETRAINED = False
@@ -85,11 +87,11 @@ def main():
         elif model_name == 'CNN_LSTM':
             model = Model(t_stage='LSTM', device=DEVICE, t_hidden_dim=500, t_output_dim=500)
         elif model_name == 'OnlyCNN':
-            model = Model(s_stage='CNN', device=DEVICE, block_num=5)
+            model = Model(s_stage='CNN', device=DEVICE, block_num=3)
         else:
             model = Model(
                 s_stage=model_name, t_stage='LSTM', device=DEVICE, pretrained=PRETRAINED,
-                block_num=5, t_hidden_dim=500, t_output_dim=500
+                block_num=3, t_hidden_dim=500, t_output_dim=500
             )
         if MODE == 'train':
             score, model = train(model, model_name, train_loader, test_loader, DEVICE, log_path=f'{ROOT}/out/{model_name}.txt')
